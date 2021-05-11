@@ -22,9 +22,15 @@ void NotSafeStrcpy( char *dest, size_t destlen, const char *src, size_t slen ) {
 int main() { 
             
         char chTemp[900]; 
+        char chTemp2[2]; 
+        char chTemp3[200]; 
+        
         NotSafeStrcpy(chTemp, 0, "Hello", 0); 
         printf("%s ", chTemp); 
         safe_strcpy(chTemp, sizeof(chTemp), "world!", 7 ); 
-        printf("%s\n", chTemp); 
+        printf("%s\n", chTemp);
+        NotSafeStrcpy(chTemp2, 0, "Overflow", 0}; 
+        printf("%s\n", chTemp2); 
+                      
 return 0; 
 }
