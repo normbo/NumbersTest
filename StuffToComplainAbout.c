@@ -29,7 +29,7 @@ int main() {
         printf("%s ", chTemp); 
         safe_strcpy(chTemp, sizeof(chTemp), "world!", 7 ); 
         printf("%s\n", chTemp);
-        NotSafeStrcpy(chTemp2, 0, "Overflow", 0}; 
+        NotSafeStrcpy(chTemp2, 0, "Overflow", 0); 
         printf("%s\n", chTemp2); 
                       
 return 0; 
