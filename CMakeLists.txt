@@ -1,3 +1,3 @@
 cmake_minimum_required(VERSION 2.8.9)
 project (hello)
-add_executable(hello SomethingToComplainAbout.c)
+add_executable(hello StuffToComplainAbout.c)
