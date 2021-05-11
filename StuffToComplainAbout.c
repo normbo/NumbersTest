@@ -19,3 +19,12 @@ void NotSafeStrcpy( char *dest, size_t destlen, const char *src, size_t slen ) {
          strcpy(dest, src); 
 }
 
+int main() { 
+            
+        char chTemp[900]; 
+        NotSafeStrcpy(chTemp, 0, "Hello", 0); 
+        printf("%s ", chTemp); 
+        safe_strcpy(chTemp, sizeof(chTemp), "world!", 7 ); 
+        printf("%s\n", chTemp); 
+return 0; 
+}
